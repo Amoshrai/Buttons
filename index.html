@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Buttons
+        </title>
+    </head>
+    <body><center>
+<button id="e" type="submit"  onclick="Add()">Button for Addision</button><br><br>
+<button id="f" type="submit"  onclick="subtract()">Button for Subtraction</button><br><br>
+<button id="g" type="submit"  onclick="multiplication()">Button to multiply</button><br><br>
+<button id="h" type="submit"  onclick="division()">Button to divide</button>
+
+<script>
+function Add(){
+num1=parseInt(prompt("Enter first value for addison"));
+num2=parseInt(prompt("Enter second value for addison"));
+document.getElementById("e").innerHTML=(num1+num2)+"<br>";
+}
+function subtract(){
+    a1=parseInt(prompt("Enter first value for subtraction"));
+    a2=parseInt(prompt("Enter second value for subtraction"));
+    document.getElementById("f").innerHTML=(a1-a2)+"<br>";
+}
+function multiplication(){
+b1=parseInt(prompt("Enter first value to multiply"));
+b2=parseInt(prompt("Enter first value to multiply"));
+document.getElementById("g").innerHTML=(b1*b2)+"<br>";
+}
+function division(){
+    c1=parseInt(prompt("Enter first value for division"));
+    c2=parseInt(prompt("Enter second value for division"));
+    document.getElementById("h").innerHTML=(c1/c2)+"<br>";
+}
+
+
+
+</script>
+<style>
+body{
+    background: linear-gradient(grey,blue,red);
+    height: 2000px;
+}
+
+#e{
+    font-size: 40px;
+    color: yellow;
+    background-color: black;
+    border: 5px solid red;
+}
+#f{
+    font-size: 40px;
+    color: blanchedalmond;
+    background-color: blue;
+    border: 5px dotted black;
+}
+#g{
+    font-size: 40px;
+    color: aqua;
+    background-color: red;
+    border: 5px solid yellow;
+}
+#h{
+    font-size: 40px;
+    color: fuchsia;
+    background-color: antiquewhite;
+    border: 5px dotted green;
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+   </center> </body>
+</html>
